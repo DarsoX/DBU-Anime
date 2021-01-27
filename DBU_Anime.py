@@ -2,11 +2,13 @@ import json
 import requests
 
 def get_topanime(years = 2020):
-    
-    get_topanimes = requests.get('https://dbuapi.herokuapp.com/aimedbu?method=get_topanime&year={}'.format(years)).json()
-    
-    return json.loads(get_topanimes)
+    trey:
+        if int(years) > 1:
+            get_topanimes = requests.get('https://dbuapi.herokuapp.com/aimedbu?method=get_topanime&year={}'.format(years)).json()
 
+        return json.loads(get_topanimes)
+    except:
+        return 'DBU_EROR: Год должен быть числом.'
 
 def get_anime():
     
@@ -16,8 +18,7 @@ def get_anime():
 
 def get_animejanr(janr = ''):
     if janr != '':
-        
-        get_animejanrs =requests.get('https://dbuapi.herokuapp.com/aimedbu?method=get_animejanr&janr={}'.format(janr))
+        get_animejanrs =requests.get('https://dbuapi.herokuapp.com/aimedbu?method=get_animejanr&janr={}'.format(str(janr).lower()))
         
         return json.loads(get_animejanrs)
     else:
