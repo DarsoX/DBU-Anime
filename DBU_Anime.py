@@ -1,6 +1,6 @@
 import http.client
 
-conn = http.client.HTTPConnection("127.0.0.1:5000")
+conn = http.client.HTTPConnection("EROR_ROT")
 
 def get_topanime(years = 2020):
     conn.request("GET", "/aimedbu?method=get_topanime&year={}".format(years))
