@@ -25,7 +25,7 @@ from dbuanime import *
 
 
 ## Список жанров:
-#Аниме:
+
 Police | Полиция
 Demons | Демоны
 Josei | Дзёсей
