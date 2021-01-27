@@ -1,22 +1,17 @@
-import http.client
-
-conn = http.client.HTTPConnection("EROR_ROT")
+import json
+from request import get
 
 def get_topanime(years = 2020):
-    conn.request("GET", "/aimedbu?method=get_topanime&year={}".format(years))
-
-    res = conn.getresponse()
-    data = res.read()
-
-    return data.decode("utf-8")
+    
+    get_top = request.get('')
+    
+    return 
 
 def get_anime():
-    conn.request("GET", "/aimedbu?method=get_anime")
-
-    res = conn.getresponse()
-    data = res.read()
-
-    return data.decode("utf-8")
+    
+    get_animes = get('https://dbuapi.herokuapp.com/aimedbu?method=get_anime').json()
+    
+    return json.loads(get_animes)
 
 def get_animejanr(janr = ''):
     if janr != '':
