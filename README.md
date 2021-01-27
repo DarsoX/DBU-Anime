@@ -26,9 +26,9 @@
 > pip install dbuanime
 
 
-#Вызывать:
+# Вызывать:
 
-from dbuanime import *
+>from dbuanime import *
 
 ## Поиск аниме по году:
 > get_topanime() - Ищет аниме по году. 
