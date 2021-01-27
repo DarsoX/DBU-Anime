@@ -5,7 +5,7 @@ def get_topanime(years = 2020):
     
     get_topanimes = requests.get('https://dbuapi.herokuapp.com/aimedbu?method=get_topanime&year={}'.format(years)).json()
     
-    return json.loads(get_animes)
+    return json.loads(get_topanimes)
 
 
 def get_anime():
