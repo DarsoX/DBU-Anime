@@ -1,25 +1,24 @@
 import json
-import request
+import requests
 
 def get_topanime(years = 2020):
     
-    get_top = request.get('')
+    get_topanimes = requests.get('https://dbuapi.herokuapp.com/aimedbu?method=get_topanime&year={}'.format(years)).json()
     
-    return 
+    return json.loads(get_animes)
+
 
 def get_anime():
     
-    get_animes = request.get('https://dbuapi.herokuapp.com/aimedbu?method=get_anime').json()
+    get_animes = requests.get('https://dbuapi.herokuapp.com/aimedbu?method=get_anime').json()
     
     return json.loads(get_animes)
 
 def get_animejanr(janr = ''):
     if janr != '':
-        onn.request("GET", "/aimedbu?method=get_animejanr&janr={}".format(janr))
-
-        res = conn.getresponse()
-        data = res.read()
-
-        return data.decode("utf-8")
+        
+        get_animejanrs =requests.get('https://dbuapi.herokuapp.com/aimedbu?method=get_animejanr&janr={}'.format(janr))
+        
+        return json.loads(get_animejanrs)
     else:
         return 'DBU_EROR: Укажите Жанр.'
