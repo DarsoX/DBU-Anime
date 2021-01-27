@@ -29,7 +29,7 @@ from dbuanime import *
 
 | English    | Русский   | English | Русский | 
 | ---------- | --------- |-------- | ------- | 
-| Police | Полиция | | Demons | Демоны |
+| Police | Полиция | Demons | Демоны |
 | Josei | Дзёсей | Yuri | Юри | 
 | Shounen | Сёнен | Comedy | Комедия |
 | Supernatural | Сверхъестественное | Seinen | Сейнен |
