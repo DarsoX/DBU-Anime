@@ -1,5 +1,5 @@
 import json
-from request import get
+import request
 
 def get_topanime(years = 2020):
     
@@ -9,7 +9,7 @@ def get_topanime(years = 2020):
 
 def get_anime():
     
-    get_animes = get('https://dbuapi.herokuapp.com/aimedbu?method=get_anime').json()
+    get_animes = request.get('https://dbuapi.herokuapp.com/aimedbu?method=get_anime').json()
     
     return json.loads(get_animes)
 
