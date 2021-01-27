@@ -2,7 +2,7 @@ import json
 import requests
 
 def get_topanime(years = 2020):
-    trey:
+    try:
         if int(years) > 1:
             get_topanimes = requests.get('https://dbuapi.herokuapp.com/aimedbu?method=get_topanime&year={}'.format(years)).json()
 
