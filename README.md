@@ -30,9 +30,9 @@ from dbuanime import *
 | English    | Русский   | English | Русский | 
 | ---------- | --------- |-------- | ------- | 
 | Police | Полиция | | Demons | Демоны |
-| Josei | Дзёсей | Yuri | Юри |
+| Josei | Дзёсей | Yuri | Юри | 
 | Shounen | Сёнен | Comedy | Комедия |
-| Supernatural | Сверхъестественное |
+| Supernatural | Сверхъестественное | Seinen | Сейнен |
 | Ecchi | Этти | Shoujo | Сёдзе |
 | Vampire | Вампиры | Yaoi | Яой |
 | Samurai | Самураи | Action | Экшен |
@@ -51,4 +51,4 @@ from dbuanime import *
 | Shoujo Ai | Сёдзё-ай | Super Power | Супер сила |
 | Military | Военное | Kids | Детское |
 | Cars | Машины | Martial Arts | Боевые искусства |
-| Dementia | Безумие | Seinen | Сейнен |
+| Dementia | Безумие | 
