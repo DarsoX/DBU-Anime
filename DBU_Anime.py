@@ -18,7 +18,7 @@ def get_anime():
 
 def get_animejanr(janr = ''):
     if janr != '':
-        get_animejanrs =requests.get('https://dbuapi.herokuapp.com/aimedbu?method=get_animejanr&janr={}'.format(str(janr).lower()))
+        get_animejanrs =requests.get('https://dbuapi.herokuapp.com/aimedbu?method=get_animejanr&janr={}'.format(str(janr).lower())).json()
         
         return json.loads(get_animejanrs)
     else:
