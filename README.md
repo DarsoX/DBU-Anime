@@ -26,7 +26,13 @@ from dbuanime import *
 
 ## Список жанров:
 
-Police | Полиция
+
+| English      | Русский   | 
+| ---------- | ------ | 
+| Police | Полиция | 
+| `dateEdit` | single |
+
+ | 
 Demons | Демоны
 Josei | Дзёсей
 Yuri | Юри
